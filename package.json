@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Nodejs In Action - Express",
   "main": "index.js",
-  "repository" :{ 
-    "type" : "git", 
-    "url" : "https://github.com/Wiiliam0611/nodejs-in-action.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wiiliam0611/nodejs-in-action.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
