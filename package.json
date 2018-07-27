@@ -12,6 +12,7 @@
     "express": "^4.16.3"
   },
   "devDependencies": {
+    "connect": "^3.6.6",
     "eslint": "^5.2.0",
     "eslint-plugin-react": "^7.10.0"
   }
