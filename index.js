@@ -1,8 +1,16 @@
 const connect = require('connect');
 
-function logger(req, res, next) {
-	console.log('%s %s', req.method, req.url);
-	next();
+function setup(format) {
+	const regexp = /:(\w+)/g;
+
+	return function createLogger(req, res, next) {
+		const str = format.replace(regexp, (match, property) => {
+			return req[property];
+		});
+
+		console.log(str);
+		next();
+	};
 }
 
 function hello(req, res) {
@@ -11,6 +19,6 @@ function hello(req, res) {
 }
 
 connect()
-	.use(logger)
+	.use(setup(':method :url'))
 	.use(hello)
 	.listen(3000);
