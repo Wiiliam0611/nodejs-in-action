@@ -1,23 +1,22 @@
 {
-  "name": "express_routing",
-  "version": "1.0.0",
-  "description": "Nodejs In Action - Express",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Wiiliam0611/nodejs-in-action.git"
-  },
+  "name": "nodejs-in-action",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "connect": "^3.6.6",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0"
   },
   "devDependencies": {
-    "connect": "^3.6.6",
     "eslint": "^5.2.0",
+    "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-react": "^7.10.0"
   }
 }
